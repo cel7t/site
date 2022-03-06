@@ -5,10 +5,6 @@ body {
 	background-color: #120f14;
 }
 
-title {
-	font-family: 'Libre Baskerville', serif;
-}
-
 h1 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 300%;
@@ -80,6 +76,25 @@ p {
 .buttonX:hover {
 	background-color:#0d0d0d;
     color:#8d5351;
+}
+
+.banner {
+	font-family: "Inconsolata", monospace;
+	white-space: pre;
+	text-align: center;
+	color: #aa85aa;
+}
+
+footer {
+	bottom: 0;
+	font-size: 75%;
+	display: flex;
+	justify-content: center;
+}
+
+footer > img {
+	margin-left: 12px;
+	height: 20px;
 }
 
 code {
