@@ -1,6 +1,7 @@
 #+title: Dual Booting
  #+OPTIONS: num:nil
  #+REVEAL_THEME: blood
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+reveal_title_slide_background: ./tux.png
 #+reveal_title_slide_background_repeat: repeat
 #+reveal_title_slide_background_size: 50px
@@ -15,6 +16,12 @@
 Society for Open Software (SOS) is a newly formed society with the purpose of increasing awareness of free and open source software and boost student engagement with the open source community.
 #+ATTR_HTML: :width 30% :height 30%
 [[./sos.png]]
+
+* Link to Slides
+[[https://untyped.ml/slides/dualboot.html]]
+
+#+ATTR_HTML: :width 50% :height 50%
+[[./qr_code.png]]
 * Introduction
 [[./tux.png]]
 ** What is dual booting?
