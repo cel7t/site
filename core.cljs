@@ -4,8 +4,6 @@
    [reagent.dom :as rd]
    [clojure.string :as s]))
 
-(js/console.log "Hello, Github Pages!")
-
 (defonce rot-deg (atom 0))
 (defonce clock-o (atom 0))
 (defonce cnt (atom 0))
@@ -172,9 +170,6 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
    [:br]
    [:div {:class "banner"}
     (rand-nth banners)]
-   ; barbwire, bigchief, doom, slant, thin, jazmine, xcourb, o8, os2, kban, fuzzy, fender, eftiwater, coinstack
-   ; alligator, doh, broadway
-;   [:h1 "untyped.ml"]
    [:h2 "Functional, yet untyped."]
    [:div {:class "flex-kebab"}
     [:input {:type "button"
@@ -202,15 +197,15 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
     [:a {:href "https://common-lisp.net/"} [:img
      {:src "https://upload.wikimedia.org/wikipedia/commons/4/48/Lisp_logo.svg"
       :title "Common Lisp"}]]
-    [:a {:href "https://ocaml.org/"} [:img
-     {:src "https://ocaml.org/img/OCaml_Sticker.svg"
-      :title "Ocaml"}]]
     [:a {:href "http://www.open-std.org/jtc1/sc22/wg14/"} [:img
      {:src "https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg"
       :title "C"}]]
     [:a {:href "https://www.python.org/"} [:img
      {:src "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-      :title "Python"}]]]
+      :title "Python"}]]
+    [:a {:href "https://ocaml.org/"} [:img
+     {:src "https://github.com/ocaml/ocaml-logo/blob/master/Colour/SVG/colour-icon.svg?raw=true"
+      :title "Ocaml"}]]]
    [:br]])
 
 (defn contact []
@@ -240,7 +235,7 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
    [:footer
     [:div "Made with "
     [:a {:href "https://clojurescript.org/"}"Clojurescript"] "."]
-    [:img {:src "https://upload.wikimedia.org/wikipedia/commons/d/d0/CC-BY-SA_icon.svg"}]]])
+    [:img {:src "http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"}]]])
 
 (rd/render [main-page]
            (. js/document (getElementById "app")))
