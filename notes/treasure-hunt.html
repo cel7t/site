@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-08-21 Sun 17:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ideas for Treasure Hunt</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ideas for Treasure Hunt</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd0e32b3">What is SOS</a></li>
+<li><a href="#orga9b221a">OCR</a></li>
+<li><a href="#org3ea1379">Examining the Source Code</a></li>
+<li><a href="#orge4a9b8e">Audio-related tasks</a></li>
+<li><a href="#org1bc1d3d">Image-related tasks</a></li>
+<li><a href="#orgf1a2f2d">Port-scanning</a></li>
+<li><a href="#orgcf4e72e">Q. How will you string together clues?</a></li>
+<li><a href="#org9fd5baf">Q. Where and how will we implement it?</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd0e32b3" class="outline-2">
+<h2 id="orgd0e32b3">What is SOS</h2>
+<div class="outline-text-2" id="text-orgd0e32b3">
+<ul class="org-ul">
+<li>Platform for Open Source Software users
+<ul class="org-ul">
+<li>Support with stuff like Linux, IRCs etc.</li>
+<li>Sharing cool stuff</li>
+</ul></li>
+<li>Propaganda for the Open Source Movement
+<ul class="org-ul">
+<li>Trying to get people to switch to Linux</li>
+<li>Cool Demonstrations with Open Source software</li>
+<li>Collaborations with Cultural Clubs</li>
+<li>Creating a more accessible image for FOSS</li>
+</ul></li>
+<li>Helping other tech clubs
+<ul class="org-ul">
+<li>Providing basic knowledge of tools like git</li>
+<li>Creating a stronger tech culture</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9b221a" class="outline-2">
+<h2 id="orga9b221a">OCR</h2>
+<div class="outline-text-2" id="text-orga9b221a">
+<ul class="org-ul">
+<li>Use OCR on an image to find the number of occurances of a word.
+<ul class="org-ul">
+<li>There are many FOSS programs available for the same</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3ea1379" class="outline-2">
+<h2 id="org3ea1379">Examining the Source Code</h2>
+<div class="outline-text-2" id="text-org3ea1379">
+<ul class="org-ul">
+<li>Try out utilities to find out which one does not behave as expected, and crawl through its code in a designated src directory to find the next clue
+<ul class="org-ul">
+<li>For example, if cp is moving files, check the files in src/cp/</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4a9b8e" class="outline-2">
+<h2 id="orge4a9b8e">Audio-related tasks</h2>
+<div class="outline-text-2" id="text-orge4a9b8e">
+<ul class="org-ul">
+<li>Words are hidden in an audio clip's spectrum
+<ul class="org-ul">
+<li>Analyze it with Audacity</li>
+</ul></li>
+<li>Reverse the audio clip to hear the word</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1bc1d3d" class="outline-2">
+<h2 id="org1bc1d3d">Image-related tasks</h2>
+<div class="outline-text-2" id="text-org1bc1d3d">
+<ul class="org-ul">
+<li>Words hidden in an image (steganograph)
+<ul class="org-ul">
+<li>steghide</li>
+</ul></li>
+<li>Words hidden in PNG metadata</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf1a2f2d" class="outline-2">
+<h2 id="orgf1a2f2d">Port-scanning</h2>
+<div class="outline-text-2" id="text-orgf1a2f2d">
+<ul class="org-ul">
+<li>Scan local open ports (ss, netstat) and get a clue</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcf4e72e" class="outline-2">
+<h2 id="orgcf4e72e">Q. How will you string together clues?</h2>
+<div class="outline-text-2" id="text-orgcf4e72e">
+<ul class="org-ul">
+<li>One clue leads to the next
+<ul class="org-ul">
+<li>More exciting</li>
+<li>One feature not working will break the chain</li>
+</ul></li>
+<li>Collect all or as many clues as you can
+<ul class="org-ul">
+<li>Leaderboard based on how far you get</li>
+</ul></li>
+<li>Minimum number of clues to progress to finals
+<ul class="org-ul">
+<li>Finals can have just one quest</li>
+</ul></li>
+<li>Best of both worlds- multiple subquests
+<ul class="org-ul">
+<li>Finishing Quest 0 will give the problem for Quest 1</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9fd5baf" class="outline-2">
+<h2 id="org9fd5baf">Q. Where and how will we implement it?</h2>
+<div class="outline-text-2" id="text-org9fd5baf">
+<ul class="org-ul">
+<li>Computer Lab PCs running it locally
+<ul class="org-ul">
+<li>Set it up with a script that downloads and sets things up as needed</li>
+<li>USB LiveCDs loaded with all the stuff we need
+<ul class="org-ul">
+<li>Lots of flash drives will be needed</li>
+<li>We could have participants bring their own flash drives but it will be hard to convince them</li>
+</ul></li>
+</ul></li>
+<li>Virtual Machines
+<ul class="org-ul">
+<li>Online VM
+<ul class="org-ul">
+<li>Server costs thru the roof</li>
+<li>Setting up multiple user accounts will be hard</li>
+</ul></li>
+<li>LiveCD that they'll run on the PC
+<ul class="org-ul">
+<li>Not sure if Lab PCs can handle VirtualBox/QEMU</li>
+</ul></li>
+</ul></li>
+<li>Player's own PC
+<ul class="org-ul">
+<li>If we do UNIX-related stuff we'll have to make them use a VM</li>
+<li>It will be harder to regulate foul play</li>
+<li>How will we share questions if we don't use a VM?
+<ul class="org-ul">
+<li>One giant zip file containing all problems</li>
+<li>Each hint will be a link to a filehost
+<ul class="org-ul">
+<li>ex. catbox.moe/&lt;clue&gt; -&gt; next puzzle in subquest</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
