@@ -31,7 +31,8 @@
 #+ATTR_HTML: :width 75% :height 75%
 [[./linus.jpg]]
 ** Present Day - BPHC
-[[./rms-cover.png]]
+#+ATTR_HTML: :width 75% :height 75%
+[[./rms-cover.jpg]]
 * The Missing Open Source Culture
 As you might have noticed, Linux adoption is very low on campus among students and faculty alike!
 As a premier Technological Institute, we should have a much, much higher rate of Linux adoption.
@@ -55,9 +56,11 @@ Society for Open Software (SOS) is a newly formed society with the purpose of in
 #+ATTR_HTML: :width 30% :height 30%
 [[./sos.png]]
 * What we do
-[[./sos_thumb.png]]
+#+ATTR_HTML: :width 75% :height 75%
+[[./sos_thumb.jpg]]
 ** Workshops
-[[./shell-dual.png]]
+#+ATTR_HTML: :width 75% :height 75%
+[[./workshops.png]]
 ** Community for Linux users
 Because of the low adoption of GNU/Linux on campus, users might run into issues they need help with. In such cases, a strong Linux User community is essential! We aim to provide such a community through bi-weekly sessions and online groups.
 * Link to these slides
