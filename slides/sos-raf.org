@@ -60,6 +60,8 @@ Society for Open Software (SOS) is a newly formed society with the purpose of in
 [[./shell-dual.png]]
 ** Community for Linux users
 Because of the low adoption of GNU/Linux on campus, users might run into issues they need help with. In such cases, a strong Linux User community is essential! We aim to provide such a community through bi-weekly sessions and online groups.
+* Link to these slides
+[[./sos-raf.png]]
 * Contacts
 
 | President    | Secretary        |
