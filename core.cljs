@@ -179,6 +179,11 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
                             (page-transition))}]
     [:input {:type "button"
              :class "buttonX"
+             :value "Blog"
+             :on-click #(do (reset! page "blog")
+                            (page-transition))}]
+    [:input {:type "button"
+             :class "buttonX"
              :value "Contact"
              :on-click #(do (reset! page "contact")
                             (page-transition))}]]
@@ -187,25 +192,28 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
 (defn about []
   [:div
    [:h1 "About"]
-   [:h3 "Education"]
-   [:p {:class "center"} "I am studying Mathematics at " [:a {:href "https://www.bits-pilani.ac.in/hyderabad/"} "BITS Pilani"] "."]
+   [:h3 "Background"]
+   [:p {:class "center"} "I am currently pursuing a Master's degree in Mathematics at " [:a {:href "https://www.bits-pilani.ac.in/hyderabad/"} "BITS Pilani"] "."]
+   [:p {:class "center"} "I am the founding president of the " [:a {:href "https://bits-sos.ml"} "Society for Open Software"] " and a member of CRUX, ACM and the Journal Club."]
    [:h3 "Languages"]
    [:div {:class "flex-langs"}
     [:a {:href "https://clojure.org/"} [:img
-     {:src "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg"
+     {:src "images/clojure.svg"
       :title "Clojure"}]]
     [:a {:href "https://common-lisp.net/"} [:img
-     {:src "https://upload.wikimedia.org/wikipedia/commons/4/48/Lisp_logo.svg"
+     {:src "images/cl.svg"
       :title "Common Lisp"}]]
     [:a {:href "http://www.open-std.org/jtc1/sc22/wg14/"} [:img
-     {:src "https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg"
+     {:src "images/gcc.svg"
       :title "C"}]]
     [:a {:href "https://www.python.org/"} [:img
-     {:src "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+     {:src "images/py.svg"
       :title "Python"}]]
     [:a {:href "https://ocaml.org/"} [:img
-     {:src "https://github.com/ocaml/ocaml-logo/blob/master/Colour/SVG/colour-icon.svg?raw=true"
+     {:src "images/ocaml.svg"
       :title "Ocaml"}]]]
+   [:h3 "Interests"]
+   [:p {:class "center"} "I am mainly interested in Cybersecurity, Programming Language Theory and High-Performance Computing."]
    [:br]])
 
 (defn contact []
@@ -213,7 +221,16 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
    [:h1 "Contact"]
    [:h2 [:a {:href "mailto:shahsarthakw at gmail dot com"} "Email"]]
    [:h2 [:a {:href "https://github.com/cel7t"} "Github"]]
+   [:h2 [:a {:href "https://in.linkedin.com/in/sarthak-shah-sos"} "Linkedin"]]
    [:h2 [:a {:href "https://discord.com/users/885027267401646121"} "Discord"]]
+   [:br]])
+
+(defn blog []
+  [:div
+   [:h1 "Personal Blog"]
+   [:h2 [:a {:href "https://blog.untyped.ml"} "blog.untyped.ml"]]
+   [:h1 "BITS SOS' Blog"]
+   [:h2 [:a {:href "https://bits-sos.ml/posts"} "bits-sos.ml/posts"]]
    [:br]])
 
 (defn main-page []
@@ -221,10 +238,11 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
    (case @page
      "home" [home]
      "about" [about]
-     "contact" [contact])
+     "contact" [contact]
+     "blog" [blog])
    [:div {:class "flex-kebab"}
     [:img
-     {:src "https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg"
+     {:src "images/clojure.svg"
       :title "Home"
       :width "60px"
       :style {:transform (str "rotate(" @rot-deg "deg)")
@@ -235,7 +253,7 @@ O))  O)) O))  O))  O))      O))  O)) O)) O)        O)   O))    O))  O)  O)) O))
    [:footer
     [:div "Made with "
     [:a {:href "https://clojurescript.org/"}"Clojurescript"] "."]
-    [:img {:src "http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"}]]])
+    [:img {:src "images/CC-BY-SA.svg"}]]])
 
 (rd/render [main-page]
            (. js/document (getElementById "app")))

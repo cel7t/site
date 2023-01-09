@@ -1,0 +1,114 @@
+/* some style */
+body {
+	color: #fefefe;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #120f14;
+}
+
+title {
+	font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 300%;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0.2em;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+a:link {
+	color: #997599;
+}
+
+a:visited {
+    color:#8d5351;
+}
+
+a:hover{
+    color:#626262;
+}
+
+p {
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.center {
+	text-align: center;
+}
+
+.flex-kebab {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-langs {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-langs > a > img {
+	margin: 10px;
+	max-width: 48px;
+	height: 48px;
+}
+
+.buttonX {
+	font-size: 150%;
+	font-weight: normal;
+	background-color: #120f14;
+	color: #997599;
+	border: 0px;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+}
+
+.buttonX:hover {
+	background-color:#0d0d0d;
+    color:#8d5351;
+}
+
+.banner {
+	font-family: "Inconsolata", monospace;
+	white-space: pre;
+	text-align: center;
+	color: #aa85aa;
+}
+
+footer {
+	bottom: 0;
+	font-size: 75%;
+	display: flex;
+	justify-content: center;
+}
+
+footer > img {
+	margin-left: 12px;
+	height: 20px;
+}
+
+code {
+	font-family: "Inconsolata", monospace;
+	background: #2a2a2a;
+	color: #ffffff;
+	border: 1px solid #4e4e4e;
+	display: block;
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 2em;
+	padding: 1em;
+}
