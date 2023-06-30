@@ -134,6 +134,9 @@ O)O) O)   O))       O)))O))
       :title "Ocaml"}]]]
    [:h3 "Interests"]
    [:p {:class "center"} "I am mainly interested in Cybersecurity, Programming Language Theory and High-Performance Computing."]
+   [:h3 "Resume"]
+   [:p {:class "center"} "My resume can be found "
+    [:a {:href "/resume.pdf"} "here"] "."]
    [:br]])
 
 (defn contact []
@@ -142,7 +145,7 @@ O)O) O)   O))       O)))O))
    [:h2 [:a {:href "mailto:shahsarthakw at gmail dot com"} "Email"]]
    [:h2 [:a {:href "https://github.com/cel7t"} "Github"]]
    [:h2 [:a {:href "https://in.linkedin.com/in/sarthak-shah-sos"} "Linkedin"]]
-   [:h2 [:a {:href "https://discord.com/users/885027267401646121"} "Discord"]]
+   [:h2 [:a {:href "https://emacs.ch/@cel7t"} "Mastodon"]]
    [:br]])
 
 (defn blog []

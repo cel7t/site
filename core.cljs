@@ -145,7 +145,7 @@ O)O) O)   O))       O)))O))
    [:h2 [:a {:href "mailto:shahsarthakw at gmail dot com"} "Email"]]
    [:h2 [:a {:href "https://github.com/cel7t"} "Github"]]
    [:h2 [:a {:href "https://in.linkedin.com/in/sarthak-shah-sos"} "Linkedin"]]
-   [:h2 [:a {:href "https://discord.com/users/885027267401646121"} "Discord"]]
+   [:h2 [:a {:href "https://emacs.ch/@cel7t"} "Mastodon"]]
    [:br]])
 
 (defn blog []
